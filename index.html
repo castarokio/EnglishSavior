@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English BAC Course</title>
+    <title>English BAC Course for Algerian Scientific Students</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon.png?v=2">
     <style>
         :root {
             --bg: #0a0f1a;
@@ -625,7 +624,8 @@
     <!-- Main Content -->
     <main class="main-content">
         <!-- Hero Section -->
-        <section class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <section class="min-h-screen flex items-center pt-20 relative overflow-hidden" style="background-image: url('https://i.imgur.com/qjY4GZp.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+            <div class="absolute inset-0 bg-black/50"></div>
             <div class="absolute inset-0 overflow-hidden pointer-events-none">
                 <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-500 opacity-5 rounded-full blur-3xl float-element"></div>
                 <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-teal-500 opacity-5 rounded-full blur-3xl float-element" style="animation-delay: -3s;"></div>
@@ -711,9 +711,13 @@
             </div>
         </section>
 
+        <!-- Course Content Wrapper with Background -->
+        <div class="relative" style="background-image: url('https://i.imgur.com/qjY4GZp.jpg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-black opacity-85"></div>
+            <div class="relative z-10">
+
         <!-- Overview Section -->
         <section id="overview" class="py-24 relative">
-            <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-4xl md:text-5xl font-bold mb-4" data-i18n="overview_title">Course Overview</h2>
                     <p class="text-slate-400 text-lg max-w-2xl mx-auto" data-i18n="overview_subtitle">Everything you need to excel in your BAC English exam</p>
@@ -1273,6 +1277,9 @@
                 <button id="cta-enroll-btn" class="btn-primary text-xl px-12 py-5" data-i18n="start_free_trial">Start Free Trial Now</button>
             </div>
         </section>
+
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer class="py-12 border-t border-slate-800">
